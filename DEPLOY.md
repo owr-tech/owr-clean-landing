@@ -47,6 +47,20 @@ Secrets and variables → Actions):
     CLOUDFLARE_API_TOKEN
     CLOUDFLARE_ACCOUNT_ID
 
+`CLOUDFLARE_ACCOUNT_ID` is already set (`5db78876e16f179e2132cef45a513d63`).
+The token cannot be minted from this session: the OAuth login deliberately has
+no token-management scope, and the dashboard is behind a bot challenge. Create
+one in the Cloudflare dashboard with **Account: Read** and **Workers Scripts:
+Edit** for this account, then hand it to the helper without pasting it in chat:
+
+    mkdir -p ~/.config/cloudflare
+    # write the token value into ~/.config/cloudflare/ci-token
+    bash scripts/set-cloudflare-secret.sh
+
+The script verifies the token, sets the GitHub secret via stdin, and deletes
+the local token file. You can also run it with a different file path as its
+first argument.
+
 The workflow `.github/workflows/deploy-cloudflare.yml` then builds and deploys
 on every push to `main`.
 
