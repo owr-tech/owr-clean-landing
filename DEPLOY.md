@@ -73,10 +73,12 @@ on every push to `main`.
 
 ## Early-access form email
 
-`POST /api/early-access` forwards submissions to FormSubmit's free AJAX
-endpoint, so no domain or paid email plan is needed. The destination is
-`revivaltent91@gmail.com` by default; override with `EARLY_ACCESS_EMAIL` if
-needed. The address is only in server code, not in the page HTML.
+`src/components/early-access-form.tsx` submits directly to FormSubmit's free
+AJAX endpoint from the visitor's browser, so no domain or paid email plan is
+needed. The destination is `revivaltent91@gmail.com`; the browser call avoids
+the Worker's shared egress IP, which FormSubmit rate limits. The API route
+keeps the same forwarding logic as a fallback. The address appears only in
+client JS, not in page HTML text.
 
 One-time step: FormSubmit has sent an "Activate Form" email to the destination
 address. Open it and click the activation link. Until that is done, submissions

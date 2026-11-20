@@ -25,6 +25,8 @@ const schema = z.object({
   message: z.string().trim().max(1000).optional(),
 })
 
+const DELIVERY_EMAIL = 'revivaltent91@gmail.com'
+
 type FormValues = z.infer<typeof schema>
 
 export function EarlyAccessForm() {
@@ -37,6 +39,36 @@ export function EarlyAccessForm() {
 
   async function onSubmit(values: FormValues) {
     setSubmitError('')
+    const payload = {
+      _subject: `Nouvelle demande d'accès — ${values.organisation}`,
+      name: values.name,
+      contact: values.contact,
+      organisation: values.organisation,
+      message: values.message || '(aucun message)',
+      _captcha: 'false',
+    }
+
+    // Submit from the visitor's browser so FormSubmit sees their IP, not the
+    // Worker's shared egress IP (which is frequently rate limited).
+    try {
+      const response = await fetch(`https://formsubmit.co/ajax/${DELIVERY_EMAIL}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(payload),
+      })
+      const result = (await response.json().catch(() => null)) as
+        | { success?: string | boolean; message?: string }
+        | null
+      const activationPending = /activation|actived|activated/i.test(result?.message || '')
+      if (response.ok && (String(result?.success) === 'true' || activationPending)) {
+        setSuccess(true)
+        form.reset()
+        return
+      }
+    } catch {
+      // fall through to the server route
+    }
+
     try {
       const response = await fetch('/api/early-access', {
         method: 'POST',
