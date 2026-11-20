@@ -1,5 +1,4 @@
-# Landing page — gestion financière à la voix
-
+# Landing page — CLEAR , solutions de gestions financière pour TPE ET PME
 Landing page française construite avec Next.js App Router, TypeScript, Tailwind CSS v4, shadcn/ui, Framer Motion et Payload.
 
 ## Installation et commandes
@@ -12,7 +11,7 @@ pnpm format --check
 pnpm build
 ```
 
-Dans Figma Make, le serveur de développement est déjà lancé. Il ne faut pas démarrer une seconde instance.
+
 
 ## Modifier les textes
 
