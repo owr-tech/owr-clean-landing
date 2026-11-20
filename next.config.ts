@@ -50,6 +50,8 @@ const nextConfig: NextConfig = {
   // Prerender source maps add ~100 MB per static build worker
   enablePrerenderSourceMaps: false,
   experimental: {
+    // Keep unattended/CI builds from stopping for the interactive upgrade nudge.
+    agentUpgrade: false,
     // Caps static build workers (~250-380 MB each) to lower `next build` peak memory
     cpus: 2,
     // Payload Admin uses Next Server Actions. In the Make preview proxy, the
@@ -82,3 +84,5 @@ const nextConfig: NextConfig = {
 export default process.env.FIGMA_EID
   ? withPayload(nextConfig, { devBundleServerPackages: false })
   : nextConfig
+
+import('@opennextjs/cloudflare').then(m => m.initOpenNextCloudflareForDev());

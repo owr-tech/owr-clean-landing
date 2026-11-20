@@ -12,3 +12,11 @@ dist/
 AGENTS.md
 npm-debug.log*
 pnpm-debug.log*
+
+# OpenNext
+.open-next
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example

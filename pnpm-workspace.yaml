@@ -9,3 +9,7 @@ supportedArchitectures:
   libc:
     - current
     - glibc
+
+allowBuilds:
+  esbuild: true
+  workerd: true
