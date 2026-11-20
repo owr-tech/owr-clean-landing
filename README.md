@@ -38,10 +38,11 @@ Ces variables sont reliées aux tokens shadcn et aux utilitaires Tailwind.
 
 Recherchez `[PLACEHOLDER:` dans `src/content/fr.ts`. Les placeholders présents sont :
 
-1. `[PLACEHOLDER: prix mensuel]`
-2. `[PLACEHOLDER: prix annuel]`
-3. `[PLACEHOLDER: e-mail]`
-4. `[PLACEHOLDER: téléphone]`
+1. Prix, description et avantages du pack `Power`
+2. Prix, description et avantages du pack `Wealth`
+3. Prix, description et avantages du pack `Glroy`
+4. `[PLACEHOLDER: e-mail]`
+5. `[PLACEHOLDER: téléphone]`
 
 Le pied de page contient aussi `[YEAR]`, conformément au brief. Remplacez-le par l’année voulue.
 

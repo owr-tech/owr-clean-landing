@@ -1,6 +1,6 @@
 export const fr = {
-  productName: 'OWR CLEAN',
-  logo: 'OWR CLEAN',
+  productName: 'CLEAR',
+  logo: 'CLEAR',
   nav: {
     label: 'Navigation principale',
     menu: 'Ouvrir le menu',
@@ -294,38 +294,50 @@ export const fr = {
   },
   pricing: {
     eyebrow: 'Abonnement',
-    title: 'Choisissez le rythme qui vous convient.',
+    title: 'Choisissez le pack qui vous convient.',
     description:
-      'Un même accès à OWR CLEAN. Choisissez simplement la fréquence de votre abonnement.',
-    popular: 'Le plus simple pour commencer',
-    included: 'Inclus dans votre abonnement',
+      'CLEAR est proposé en trois packs. Comparez-les pour choisir celui qui vous correspond.',
+    included: 'Ce pack inclut',
     plans: [
       {
-        name: 'Mensuel',
-        price: '[PLACEHOLDER: prix mensuel]',
-        period: 'par mois',
-        description: 'Un abonnement facturé chaque mois.',
+        name: 'Power',
+        price: '[PLACEHOLDER: prix Power]',
+        period: 'abonnement',
+        description: '[PLACEHOLDER: description Power]',
+        features: [
+          '[PLACEHOLDER: avantage 1 Power]',
+          '[PLACEHOLDER: avantage 2 Power]',
+          '[PLACEHOLDER: avantage 3 Power]',
+        ],
+        featured: false,
+      },
+      {
+        name: 'Wealth',
+        price: '[PLACEHOLDER: prix Wealth]',
+        period: 'abonnement',
+        description: '[PLACEHOLDER: description Wealth]',
+        features: [
+          '[PLACEHOLDER: avantage 1 Wealth]',
+          '[PLACEHOLDER: avantage 2 Wealth]',
+          '[PLACEHOLDER: avantage 3 Wealth]',
+        ],
         featured: true,
       },
       {
-        name: 'Annuel',
-        price: '[PLACEHOLDER: prix annuel]',
-        period: 'par an',
-        description: 'Un abonnement facturé une fois par an.',
+        name: 'Glroy',
+        price: '[PLACEHOLDER: prix Glroy]',
+        period: 'abonnement',
+        description: '[PLACEHOLDER: description Glroy]',
+        features: [
+          '[PLACEHOLDER: avantage 1 Glroy]',
+          '[PLACEHOLDER: avantage 2 Glroy]',
+          '[PLACEHOLDER: avantage 3 Glroy]',
+        ],
         featured: false,
       },
     ],
-    features: [
-      "Saisie directe dans l'application",
-      'Vocaux WhatsApp unitaires ou groupés',
-      'Reconnaissance des photos du cahier',
-      'File de validation avant enregistrement',
-      'Mise à jour automatique du stock',
-      'Suivi des ventes, dépenses, taxes et encaissements',
-      'Accès Vendeur, Directeur général et Comptable',
-    ],
     cta: 'Demander une démo',
-    note: 'Les montants définitifs sont à renseigner avant publication.',
+    note: 'Les prix et le contenu définitif de chaque pack sont à renseigner avant publication.',
   },
   form: {
     eyebrow: 'Accès anticipé',
@@ -392,7 +404,7 @@ export const fr = {
       {
         question: 'Combien ça coûte ?',
         answer:
-          'Les options mensuelle et annuelle sont présentées dans la section Tarifs. Les montants définitifs seront renseignés avant publication.',
+          'Les packs Power, Wealth et Glroy sont présentés dans la section Tarifs. Les montants définitifs seront renseignés avant publication.',
       },
     ],
   },
@@ -406,14 +418,14 @@ export const fr = {
     contactTitle: 'Contact',
     email: '[PLACEHOLDER: e-mail]',
     phone: '[PLACEHOLDER: téléphone]',
-    legal: '© [YEAR] OWR CLEAN',
+    legal: '© [YEAR] CLEAR',
   },
   api: {
     invalid: 'Données invalides.',
     ok: 'Demande reçue.',
   },
   seo: {
-    title: 'OWR CLEAN — Gérez vos finances à la voix',
+    title: 'CLEAR — Gérez vos finances à la voix',
     description:
       "Enregistrez ventes, dépenses et stocks dans l'application, par vocal WhatsApp ou avec une photo de votre cahier.",
   },

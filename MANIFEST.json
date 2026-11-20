@@ -1,7 +1,7 @@
 {
   "source_url": "https://www.figma.com/make/ET2RToKRZ5x6mIt5XiOEHw/Build-course-landing-page?p=f&t=WiIBbLvK0qhMUaVv-0",
   "file_key": "ET2RToKRZ5x6mIt5XiOEHw",
-  "file_count": 66,
+  "file_count": 70,
   "files": [
     {
       "path": "package.json",
@@ -46,7 +46,7 @@
     {
       "path": "README.md",
       "kind": "source",
-      "bytes": 2545
+      "bytes": 2631
     },
     {
       "path": "src/app/(frontend)/.figma/make/[asset]/route.ts",
@@ -161,7 +161,7 @@
     {
       "path": "src/components/sections/landing-sections.tsx",
       "kind": "source",
-      "bytes": 30975
+      "bytes": 31416
     },
     {
       "path": "src/components/site-header.tsx",
@@ -256,7 +256,7 @@
     {
       "path": "src/content/fr.ts",
       "kind": "source",
-      "bytes": 15150
+      "bytes": 15416
     },
     {
       "path": "src/lib/make-custom-code.tsx",
@@ -309,6 +309,21 @@
       "bytes": 14722
     },
     {
+      "path": "assets/3e0a8dfe3870067e3f5839600c818047363622dc.png",
+      "kind": "image",
+      "bytes": 18053
+    },
+    {
+      "path": "assets/45773340b35277696b002d343bba10014bbd9482.png",
+      "kind": "image",
+      "bytes": 443880
+    },
+    {
+      "path": "assets/6e0f268adcc1cb560c06196e993c83d3afbc95bd.png",
+      "kind": "image",
+      "bytes": 14789
+    },
+    {
       "path": "assets/8dd17f9f61e1383553019dcef8d2c6a51af24f12.png",
       "kind": "image",
       "bytes": 345103
@@ -322,6 +337,11 @@
       "path": "assets/a075a0f652c2d158f9088f95715bbdd1c56a07b1.png",
       "kind": "image",
       "bytes": 16636
+    },
+    {
+      "path": "assets/b0eed8344f0925bdc4eb35029430dfc7c6242cfd.png",
+      "kind": "image",
+      "bytes": 349632
     },
     {
       "path": "assets/ef9b4d6129aed5f75c122d99b123bd7de1687a02.png",

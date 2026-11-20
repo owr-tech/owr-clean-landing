@@ -612,7 +612,7 @@ export function PricingSection() {
           description={fr.pricing.description}
           align="center"
         />
-        <div className="mx-auto mt-12 grid max-w-5xl gap-5 lg:grid-cols-2">
+        <div className="mx-auto mt-12 grid max-w-7xl gap-5 md:grid-cols-2 xl:grid-cols-3">
           {fr.pricing.plans.map((plan) => (
             <Card
               className={cn(
@@ -632,9 +632,6 @@ export function PricingSection() {
                   >
                     {plan.name}
                   </Badge>
-                  {plan.featured && (
-                    <Badge className="bg-accent text-accent-foreground">{fr.pricing.popular}</Badge>
-                  )}
                 </div>
                 <div className="mt-7">
                   <p className="font-heading text-4xl font-bold tracking-tight sm:text-5xl">
@@ -660,7 +657,7 @@ export function PricingSection() {
                 <Separator className={cn('my-7', plan.featured && 'bg-primary-foreground/20')} />
                 <p className="text-sm font-bold">{fr.pricing.included}</p>
                 <ul className="mt-5 space-y-3">
-                  {fr.pricing.features.map((feature) => (
+                  {plan.features.map((feature) => (
                     <li className="flex gap-3 text-sm leading-relaxed" key={feature}>
                       <span
                         className={cn(
@@ -743,19 +740,22 @@ export function FaqSection() {
 
 export function FinalCtaAndFooter() {
   return (
-    <>
-      <section className="px-4 pb-6 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl overflow-hidden rounded-[2.5rem] bg-primary px-6 py-16 text-center text-primary-foreground sm:px-12 md:py-24">
-          <h2 className="mx-auto max-w-4xl font-heading text-4xl font-bold tracking-[-0.04em] sm:text-6xl">
-            {fr.finalCta.title}
-          </h2>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/70">
-            {fr.finalCta.text}
-          </p>
+    <footer className="mt-6 overflow-hidden rounded-t-[2.5rem] bg-primary px-4 pt-16 text-primary-foreground sm:px-6 sm:pt-20 lg:px-8 lg:pt-24">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid gap-10 border-b border-primary-foreground/15 pb-16 lg:grid-cols-[1fr_auto] lg:items-end lg:pb-20">
+          <div>
+            <p className="text-sm font-bold tracking-[0.18em] text-accent uppercase">{fr.logo}</p>
+            <h2 className="mt-5 max-w-4xl font-heading text-5xl font-bold tracking-[-0.05em] text-balance sm:text-6xl lg:text-7xl">
+              {fr.finalCta.title}
+            </h2>
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/70">
+              {fr.finalCta.text}
+            </p>
+          </div>
           <a
             className={cn(
               buttonVariants({ size: 'lg' }),
-              'mt-9 h-13 rounded-full bg-accent px-8 text-base text-accent-foreground hover:bg-accent/90',
+              'h-13 w-fit rounded-full bg-accent px-8 text-base text-accent-foreground hover:bg-accent/90',
             )}
             href="#demande-demo"
           >
@@ -763,19 +763,16 @@ export function FinalCtaAndFooter() {
             <ArrowRight className="ml-1 size-4" aria-hidden />
           </a>
         </div>
-      </section>
-      <footer className="px-4 py-12 sm:px-6 lg:px-8">
-        <div className="mx-auto grid max-w-7xl gap-10 border-t border-primary/10 pt-10 md:grid-cols-[1fr_auto_auto]">
+        <div className="grid gap-10 py-12 md:grid-cols-[1fr_auto_auto] md:items-start">
           <div>
-            <p className="font-heading font-bold text-primary">{fr.logo}</p>
-            <p className="mt-3 max-w-sm text-sm leading-relaxed text-muted-foreground">
+            <p className="max-w-sm text-sm leading-relaxed text-primary-foreground/65">
               {fr.footer.text}
             </p>
           </div>
           <nav className="flex flex-col gap-2" aria-label={fr.nav.label}>
             {fr.nav.links.map((link) => (
               <a
-                className="text-sm font-semibold hover:text-primary"
+                className="text-sm font-semibold text-primary-foreground/70 transition-colors hover:text-accent"
                 href={link.href}
                 key={link.href}
               >
@@ -784,13 +781,23 @@ export function FinalCtaAndFooter() {
             ))}
           </nav>
           <div>
-            <p className="font-bold">{fr.footer.contactTitle}</p>
-            <p className="mt-3 text-sm text-muted-foreground">{fr.footer.email}</p>
-            <p className="mt-1 text-sm text-muted-foreground">{fr.footer.phone}</p>
+            <p className="font-bold text-primary-foreground">{fr.footer.contactTitle}</p>
+            <p className="mt-3 text-sm text-primary-foreground/65">{fr.footer.email}</p>
+            <p className="mt-1 text-sm text-primary-foreground/65">{fr.footer.phone}</p>
           </div>
-          <p className="text-sm text-muted-foreground md:col-span-3">{fr.footer.legal}</p>
         </div>
-      </footer>
-    </>
+        <div
+          aria-hidden
+          className="select-none overflow-hidden border-t border-primary-foreground/15"
+        >
+          <p className="translate-y-[8%] text-center font-heading text-[clamp(6rem,21vw,19rem)] leading-[0.72] font-bold tracking-[-0.085em] text-primary-foreground">
+            {fr.logo}
+          </p>
+        </div>
+        <p className="border-t border-primary-foreground/15 py-5 text-center text-xs text-primary-foreground/55">
+          {fr.footer.legal}
+        </p>
+      </div>
+    </footer>
   )
 }
