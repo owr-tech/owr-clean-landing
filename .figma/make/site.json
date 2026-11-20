@@ -1,0 +1,7 @@
+{
+  "title": "Build course — gestion financière à la voix",
+  "description": "Landing page française pour une formation à la gestion financière à la voix",
+  "language": "fr",
+  "icons": { "icon": "/favicon.svg" },
+  "robots": { "index": true }
+}

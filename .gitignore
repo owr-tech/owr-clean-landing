@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+dist/
+.turbo/
+.wrangler/
+*.tsbuildinfo
+.env
+.env.*
+.dev.vars
+.DS_Store
+AGENTS.md
+npm-debug.log*
+pnpm-debug.log*

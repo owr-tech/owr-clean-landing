@@ -1,0 +1,337 @@
+{
+  "source_url": "https://www.figma.com/make/ET2RToKRZ5x6mIt5XiOEHw/Build-course-landing-page?p=f&t=WiIBbLvK0qhMUaVv-0",
+  "file_key": "ET2RToKRZ5x6mIt5XiOEHw",
+  "file_count": 66,
+  "files": [
+    {
+      "path": "package.json",
+      "kind": "source",
+      "bytes": 2016
+    },
+    {
+      "path": "components.json",
+      "kind": "source",
+      "bytes": 530
+    },
+    {
+      "path": "figma-image-loader.ts",
+      "kind": "source",
+      "bytes": 100
+    },
+    {
+      "path": "next.config.ts",
+      "kind": "source",
+      "bytes": 3114
+    },
+    {
+      "path": "oxfmt.config.ts",
+      "kind": "source",
+      "bytes": 248
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "kind": "source",
+      "bytes": 199
+    },
+    {
+      "path": "postcss.config.mjs",
+      "kind": "source",
+      "bytes": 144
+    },
+    {
+      "path": "public/favicon.svg",
+      "kind": "source",
+      "bytes": 3235
+    },
+    {
+      "path": "README.md",
+      "kind": "source",
+      "bytes": 2545
+    },
+    {
+      "path": "src/app/(frontend)/.figma/make/[asset]/route.ts",
+      "kind": "source",
+      "bytes": 898
+    },
+    {
+      "path": "src/app/(frontend)/api/early-access/route.ts",
+      "kind": "source",
+      "bytes": 659
+    },
+    {
+      "path": "src/app/(frontend)/layout.tsx",
+      "kind": "source",
+      "bytes": 2964
+    },
+    {
+      "path": "src/app/(frontend)/not-found.tsx",
+      "kind": "source",
+      "bytes": 798
+    },
+    {
+      "path": "src/app/(frontend)/page.tsx",
+      "kind": "source",
+      "bytes": 1284
+    },
+    {
+      "path": "src/app/(frontend)/styles.css",
+      "kind": "source",
+      "bytes": 3763
+    },
+    {
+      "path": "src/app/(payload)/admin/[[...segments]]/not-found.tsx",
+      "kind": "source",
+      "bytes": 690
+    },
+    {
+      "path": "src/app/(payload)/admin/[[...segments]]/page.tsx",
+      "kind": "source",
+      "bytes": 674
+    },
+    {
+      "path": "src/app/(payload)/admin/importMap.js",
+      "kind": "source",
+      "bytes": 8317
+    },
+    {
+      "path": "src/app/(payload)/admin/logout/route.ts",
+      "kind": "source",
+      "bytes": 911
+    },
+    {
+      "path": "src/app/(payload)/api/[...slug]/route.ts",
+      "kind": "source",
+      "bytes": 509
+    },
+    {
+      "path": "src/app/(payload)/api/graphql-playground/route.ts",
+      "kind": "source",
+      "bytes": 264
+    },
+    {
+      "path": "src/app/(payload)/api/graphql/route.ts",
+      "kind": "source",
+      "bytes": 274
+    },
+    {
+      "path": "src/app/(payload)/custom.css",
+      "kind": "source",
+      "bytes": 99
+    },
+    {
+      "path": "src/app/(payload)/layout.tsx",
+      "kind": "source",
+      "bytes": 857
+    },
+    {
+      "path": "src/app/robots.ts",
+      "kind": "source",
+      "bytes": 277
+    },
+    {
+      "path": "src/app/sitemap.ts",
+      "kind": "source",
+      "bytes": 283
+    },
+    {
+      "path": "src/collections/Admins.ts",
+      "kind": "source",
+      "bytes": 476
+    },
+    {
+      "path": "src/collections/Folders.ts",
+      "kind": "source",
+      "bytes": 262
+    },
+    {
+      "path": "src/collections/Media.ts",
+      "kind": "source",
+      "bytes": 410
+    },
+    {
+      "path": "src/collections/Tags.ts",
+      "kind": "source",
+      "bytes": 253
+    },
+    {
+      "path": "src/components/early-access-form.tsx",
+      "kind": "source",
+      "bytes": 5694
+    },
+    {
+      "path": "src/components/sections/landing-sections.tsx",
+      "kind": "source",
+      "bytes": 30975
+    },
+    {
+      "path": "src/components/site-header.tsx",
+      "kind": "source",
+      "bytes": 3066
+    },
+    {
+      "path": "src/components/stack-cards.tsx",
+      "kind": "source",
+      "bytes": 9473
+    },
+    {
+      "path": "src/components/ui/accordion.tsx",
+      "kind": "source",
+      "bytes": 2634
+    },
+    {
+      "path": "src/components/ui/avatar.tsx",
+      "kind": "source",
+      "bytes": 2988
+    },
+    {
+      "path": "src/components/ui/badge.tsx",
+      "kind": "source",
+      "bytes": 1887
+    },
+    {
+      "path": "src/components/ui/button.tsx",
+      "kind": "source",
+      "bytes": 3231
+    },
+    {
+      "path": "src/components/ui/card.tsx",
+      "kind": "source",
+      "bytes": 2563
+    },
+    {
+      "path": "src/components/ui/form.tsx",
+      "kind": "source",
+      "bytes": 1095
+    },
+    {
+      "path": "src/components/ui/input.tsx",
+      "kind": "source",
+      "bytes": 1031
+    },
+    {
+      "path": "src/components/ui/label.tsx",
+      "kind": "source",
+      "bytes": 509
+    },
+    {
+      "path": "src/components/ui/progress.tsx",
+      "kind": "source",
+      "bytes": 1684
+    },
+    {
+      "path": "src/components/ui/select.tsx",
+      "kind": "source",
+      "bytes": 6639
+    },
+    {
+      "path": "src/components/ui/separator.tsx",
+      "kind": "source",
+      "bytes": 530
+    },
+    {
+      "path": "src/components/ui/sheet.tsx",
+      "kind": "source",
+      "bytes": 4296
+    },
+    {
+      "path": "src/components/ui/table.tsx",
+      "kind": "source",
+      "bytes": 2276
+    },
+    {
+      "path": "src/components/ui/tabs.tsx",
+      "kind": "source",
+      "bytes": 3491
+    },
+    {
+      "path": "src/components/ui/textarea.tsx",
+      "kind": "source",
+      "bytes": 833
+    },
+    {
+      "path": "src/components/whatsapp-demo.tsx",
+      "kind": "source",
+      "bytes": 3287
+    },
+    {
+      "path": "src/content/fr.ts",
+      "kind": "source",
+      "bytes": 15150
+    },
+    {
+      "path": "src/lib/make-custom-code.tsx",
+      "kind": "source",
+      "bytes": 1815
+    },
+    {
+      "path": "src/lib/make-site-settings.ts",
+      "kind": "source",
+      "bytes": 680
+    },
+    {
+      "path": "src/lib/payload.ts",
+      "kind": "source",
+      "bytes": 2969
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "kind": "source",
+      "bytes": 24
+    },
+    {
+      "path": "src/payload-types.ts",
+      "kind": "source",
+      "bytes": 17725
+    },
+    {
+      "path": "src/payload.config.ts",
+      "kind": "source",
+      "bytes": 1228
+    },
+    {
+      "path": "tsconfig.json",
+      "kind": "source",
+      "bytes": 701
+    },
+    {
+      "path": "assets/1983a1de2b3e3b4956a33f36d1f20f0cb4f3d791.png",
+      "kind": "image",
+      "bytes": 94629
+    },
+    {
+      "path": "assets/1b60fef3b5634add9c6fb59d33cde609f0d50f14.png",
+      "kind": "image",
+      "bytes": 438969
+    },
+    {
+      "path": "assets/30f308960917a34df739e81bd84ac265353e3211.png",
+      "kind": "image",
+      "bytes": 14722
+    },
+    {
+      "path": "assets/8dd17f9f61e1383553019dcef8d2c6a51af24f12.png",
+      "kind": "image",
+      "bytes": 345103
+    },
+    {
+      "path": "assets/8fc7b3897e356c8020e5e8319e6f8449fd803f32.png",
+      "kind": "image",
+      "bytes": 2849
+    },
+    {
+      "path": "assets/a075a0f652c2d158f9088f95715bbdd1c56a07b1.png",
+      "kind": "image",
+      "bytes": 16636
+    },
+    {
+      "path": "assets/ef9b4d6129aed5f75c122d99b123bd7de1687a02.png",
+      "kind": "image",
+      "bytes": 114072
+    },
+    {
+      "path": "assets/fa3c39bc9c9d452663958630b2939546fc750eed.png",
+      "kind": "image",
+      "bytes": 3578725
+    }
+  ]
+}
