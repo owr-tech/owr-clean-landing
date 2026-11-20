@@ -71,6 +71,18 @@ on every push to `main`.
   updated page (new sections, "OWR CLEAN" copy) and `POST /api/early-access` 200
 - `pnpm exec tsc --noEmit` → exit 0
 
+## Early-access form email
+
+`POST /api/early-access` forwards submissions to FormSubmit's free AJAX
+endpoint, so no domain or paid email plan is needed. The destination is
+`revivaltent91@gmail.com` by default; override with `EARLY_ACCESS_EMAIL` if
+needed. The address is only in server code, not in the page HTML.
+
+One-time step: FormSubmit has sent an "Activate Form" email to the destination
+address. Open it and click the activation link. Until that is done, submissions
+are accepted by the site but not delivered. Repeated test submissions from one
+IP can trigger FormSubmit's rate limit (HTTP 429); it clears after a cooldown.
+
 ## Local-only changes applied to the retrieved source
 
 - `.figma/make/site.json` recreated (Figma injects it but does not export it)
